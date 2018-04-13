@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{124AE96C-3913-47B4-B4F5-957411EDA60D}</ProjectGuid>
+    <ProjectGuid>{6040878D-BF89-4E68-8948-D554DA104130}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>UniversityOfPROforma</RootNamespace>
-    <AssemblyName>UniversityOfPROforma</AssemblyName>
+    <RootNamespace>UofPROAdminApp</RootNamespace>
+    <AssemblyName>UofPROAdminApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

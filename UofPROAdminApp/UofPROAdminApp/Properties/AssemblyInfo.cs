@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UniversityOfPROforma")]
+[assembly: AssemblyTitle("UofPROAdminApp")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("UniversityOfPROforma")]
+[assembly: AssemblyProduct("UofPROAdminApp")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("124ae96c-3913-47b4-b4f5-957411eda60d")]
+[assembly: Guid("6040878d-bf89-4e68-8948-d554da104130")]
 
 // Version information for an assembly consists of the following four values:
 //
