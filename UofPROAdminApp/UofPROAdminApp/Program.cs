@@ -56,6 +56,7 @@ namespace UofPROAdminApp
                     else if (response == "4")
                     {
                         //View all Classes, who is teaching them, and who is enrolled
+                        ViewAllCourseData.GetAllCourseData(connection);
 
                     }
                     else

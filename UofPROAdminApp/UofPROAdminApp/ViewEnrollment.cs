@@ -13,7 +13,6 @@ namespace UofPROAdminApp
 
         public static List<Courses> GetEnrollment(SqlConnection connection)
         {
-            // Query the database
             var _select = "SELECT Courses.Name, Courses.Number, Students.FullName as Student" +
                 " FROM Courses" +
                 " JOIN Enrollment ON Enrollment.CourseID = Courses.ID" +
