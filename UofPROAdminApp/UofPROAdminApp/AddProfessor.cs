@@ -25,11 +25,11 @@ namespace UofPROAdminApp
             return newProfessor;
         }
 
-        public static void InsertProftoBD(SqlConnection conn, Professors newProfessor)
+        public static void InsertProftoBD(SqlConnection connection, Professors newProfessor)
         {
             var _insert = "INSERT INTO Professors (Name, Title)" + 
                           "Values (@Name, @Title)";
-            var cmd = new SqlCommand(_insert, conn);
+            var cmd = new SqlCommand(_insert, connection);
 
             cmd.Parameters.AddWithValue("Name", newProfessor.Name);
             cmd.Parameters.AddWithValue("Title", newProfessor.Title);

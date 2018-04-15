@@ -33,21 +33,21 @@ namespace UofPROAdminApp
 
                     if (response == "1")
                     {
-                            //Add new professor data
-                            var newProfessor = AddProfessor.CreateProf();
-                            
-                            //insert new professor data into DB
-                   
-                            AddProfessor.InsertProftoBD(connection, newProfessor);
+                        //Add new professor data
+                        var newProfessor = AddProfessor.CreateProf();
 
-                            Console.WriteLine($"Successfully added {newProfessor.Title} {newProfessor.Name}.");
-
-                        
+                        //insert new professor data into DB
+                        AddProfessor.InsertProftoBD(connection, newProfessor);
+                        Console.WriteLine($"Successfully added {newProfessor.Title} {newProfessor.Name}.");
                     }
                     else if (response == "2")
                     {
-                        //Add Class functionality
+                        //Add new course data
+                        var newCourse = AddCourse.CreateCourse();
 
+                        //insert new professor data into DB
+                        AddCourse.InsertCoursetoBD(connection, newCourse);
+                        Console.WriteLine($"Successfully added {newCourse.Name}.");
                     }
                     else if (response == "3")
                     {
