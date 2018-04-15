@@ -14,6 +14,8 @@ namespace UofPROAdminApp
             const string CONNECTION_TO_DATABASE = @"Server=localhost\SQLEXPRESS;Database=UniversityofPROforma;Trusted_Connection=True;";
 
             Console.WriteLine("Welcome to University of PROforma Admin");
+            Console.WriteLine("---------------------------------------");
+
 
             using (var connection = new SqlConnection(CONNECTION_TO_DATABASE))
             {

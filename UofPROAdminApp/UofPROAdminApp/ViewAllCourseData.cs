@@ -25,6 +25,7 @@ namespace UofPROAdminApp
             while (reader.Read())
             {
                 var course = new Courses(reader);
+               // if (course.Name == "NULL")
                 Console.WriteLine($"{course.Number} | {course.Name} | {course.Room} | {course.Professor} | {course.Student}");
             }
             return _rv;
