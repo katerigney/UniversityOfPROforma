@@ -14,11 +14,10 @@ namespace UofPROAdminApp
         {
             var _select = "SELECT Courses.Number, Courses.Name, Courses.Room, Professors.Name as Professor, Students.FullName as Student" +
                 " FROM Courses" +
-                " JOIN InSession ON InSession.CourseID = Courses.ID" +
-                " FULL OUTER JOIN Professors ON InSession.ProfID = Professors.ID" +
-                " JOIN Enrollment ON Enrollment.CourseID = Courses.ID" +
-                " FULL OUTER JOIN Students ON Enrollment.StudentID = Students.ID";
-                //WHAT KIND OF JOINS HERE???
+                " FULL JOIN InSession ON InSession.CourseID = Courses.ID" +
+                " FULL JOIN Professors ON InSession.ProfID = Professors.ID" +
+                " FULL JOIN Enrollment ON Enrollment.CourseID = Courses.ID" +
+                " FULL JOIN Students ON Enrollment.StudentID = Students.ID";
 
             var query = new SqlCommand(_select, connection);
             var reader = query.ExecuteReader();
