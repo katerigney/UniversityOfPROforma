@@ -15,15 +15,21 @@ namespace UofPROAdminApp
         public string Name { get; set; }
         public string Room { get; set; }
         public string StartTime { get; set; }
+        public string Student { get; set; }
+        public string Professor { get; set; }
+
 
         public Courses(SqlDataReader reader)
         {
-            ID = (int)reader["ID"];
+            // These are throwing exceptions
+
+            //ID = (int)reader["ID"];
             Number = reader["Number"].ToString();
-            CourseLevel = reader["CourseLevel"].ToString();
+            //CourseLevel = reader["CourseLevel"].ToString();
             Name = reader["Name"].ToString();
-            Room = reader["Room"].ToString();
-            StartTime = reader["StartTime"].ToString();
+            //Room = reader["Room"].ToString();
+            Student = reader["Student"].ToString();
+            Professor = reader["Professor"].ToString();
         }
 
         public Courses()

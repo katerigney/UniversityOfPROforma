@@ -51,8 +51,7 @@ namespace UofPROAdminApp
                     }
                     else if (response == "3")
                     {
-                        //View who is enrolled in a class
-
+                        ViewEnrollment.GetEnrollment(connection);
                     }
                     else if (response == "4")
                     {
