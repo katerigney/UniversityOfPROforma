@@ -41,10 +41,13 @@ namespace UofPROStudentApp
                     }
                      else if (response == "2")
                      {
-                         var newStudentInfo = StudentInfo.GetStudentInfo();
+                        var newStudentInfo = StudentInfo.GetStudentInfo();
+                        StudentInfo.InsertStudent(connection, newStudentInfo);
 
-                         //User Select course
-                         var courseSelection = Enroll.SelectCourse(connection);
+                        Console.WriteLine($"test in main program {newStudentInfo.FullName}");
+                        //User Select course
+                        var courseSelection = Enroll.SelectCourse(connection);
+                        
 
                          Enroll.InsertStudentIntoCourse(connection, courseSelection, newStudentInfo);
                          //Console.WriteLine($"Successfully enrolled in {newCourse.Name}.");

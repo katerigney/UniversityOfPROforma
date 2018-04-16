@@ -29,6 +29,9 @@ namespace UofPROStudentApp
 
             Console.WriteLine("Which course would you like to enroll in? Please provide the course number.");
             var studentCourseSelection = Console.ReadLine();
+
+            reader.Close();
+
             return studentCourseSelection;
         }
 
